@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 /* ================ HEADER ================ */
 .header:before {
   z-index: 2;
@@ -65,13 +69,14 @@ a {
   background-repeat: no-repeat;
   height: 448px;
   background-size: cover;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 .header-top {
@@ -166,6 +171,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
 }
 
 .main-card:not(:last-child) {
@@ -184,15 +190,13 @@ a {
 /* object-fit: contain; за исключением указания этого св-ва, но тогда картинка смещается вниз, хоть и сохраняет пропорции */
 
 .card-text {
-  width: 367px;
   margin-left: 30px;
-  margin-top: -15px;
 }
 
 .card-list-links {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: flex;
 
   flex-wrap: wrap;
   /* test не очень красиво выглядит, если тегов много,однако флекс-врап отрабатывает штатно */
@@ -213,6 +217,10 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 40px;
+}
+
+.card-link:hover {
+  color: #000000;
 }
 
 .card-title {
@@ -261,8 +269,11 @@ a {
   /* test добавил на случай длинного имени, оно "спрыгивает" ниже даты, если длинное, аналогично ведет себя при очень длинном тексте даты */
 }
 
-.description-container > p {
+.description-container {
   margin-top: 47px;
+}
+
+.description-container > p {
   letter-spacing: 0.2px;
   /* Почему-то некоторые блоки хорошо отображаются с РАЗНЫМ значением "letter-spacing" */
   /* ПП */
@@ -271,8 +282,8 @@ a {
   color: #0f0d0e;
 }
 
-.description-container > p:not(:first-child) {
-  margin-top: -5px;
+.description-container > p:not(:last-child) {
+  margin-bottom: 10px;
 }
 /* 
 .description-additional {
@@ -316,12 +327,13 @@ a {
 .aside-card {
   display: -webkit-box;
   display: -ms-flexbox;
+  align-items: flex-start;
   display: flex;
   margin-bottom: 22px;
 }
 
-.aside-card:last-child {
-  margin-bottom: 60px;
+.aside-card:last-of-type {
+  margin-bottom: 62px;
 }
 
 .aside-img {
@@ -373,8 +385,8 @@ a {
 /* ================ FORM-SEARCH ================ */
 
 .form-search {
-  margin-top: 62px;
-  margin-bottom: 59px;
+  /* margin-top: 62px; */
+  /* margin-bottom: 59px; */
   /* ПП  test*/
   /* width: 300px; */
   /* вроде надо было раскомментировать ширину 300*/
@@ -426,8 +438,7 @@ a {
 
 /* ================ MAILING LIST FORM ================ */
 .mailing-list {
-  margin-top: 59px;
-  /* test, ПП */
+  /* margin-top: 59px; */
 }
 
 .mailing-list-title {
@@ -459,6 +470,7 @@ a {
   font-size: 13px;
   background-color: #f4f7f6;
   margin-bottom: 18px;
+  border: 1px solid #f4f7f6;
 }
 
 .email-button {
@@ -470,7 +482,7 @@ a {
   background-color: #b59f5b;
   color: #ffffff;
   font-weight: 700;
-  margin-bottom: 61px;
+  border: none;
 }
 
 .email-button:hover {
@@ -480,7 +492,7 @@ a {
 /* ================ TAGS SECTION ================ */
 
 .tags {
-  /* test при удалении раздела "теги" появляется неприлично большой зазор между кнопкой "подписаться" и разделом "темы" */
+  margin-top: 61px;
 }
 
 .tags-title {
@@ -532,8 +544,11 @@ a {
 
 /* ================ THEMES SECTION ================ */
 
-.themes-title {
+.themes {
   margin-top: 52px;
+}
+
+.themes-title {
   /* ПП */
   text-align: center;
   font-size: 14px;
@@ -558,8 +573,11 @@ a {
   line-height: 0.2;
 }
 
+.themes-item:not(:first-child) {
+  margin-top: 20px;
+}
 .themes-item {
-  margin-top: 21px;
+  /* margin-top: 21px; */
   padding-bottom: 18px;
   /* ПП */
   font-size: 14px;
@@ -568,7 +586,11 @@ a {
   border-bottom: 1px solid #eeeeee;
 }
 
-.themes-item:hover {
+.themes-link {
+  color: #000000;
+}
+
+.themes-link:hover {
   color: #b59f5b;
 }
 
@@ -583,7 +605,7 @@ a {
 
 .footer {
   margin-top: 64px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 /* 9.05 замечание */
 
