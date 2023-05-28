@@ -329,6 +329,7 @@ figure {
 .aside-datetime {
   display: block;
   /* margin-left: -9px; */
+  /* отрицательный марджин */
   opacity: 0.541;
   font-size: 12px;
   color: #000000;
@@ -337,6 +338,7 @@ figure {
 .aside-card-title {
   margin-top: 4px;
   /* margin-left: -8px; */
+  /* отрицательный марджин */
   letter-spacing: -0.3px;
   font-size: 14px;
   line-height: 18px;
