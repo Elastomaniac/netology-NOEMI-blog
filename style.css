@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  font-family: 'Open Sans';
+  src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  font-family: 'Open Sans';
+  src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff');
   font-style: normal;
   font-weight: bold;
 }
@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: 'Open Sans Regular', sans-serif;
   margin: 0;
 }
 
@@ -46,7 +46,7 @@ figure {
 /* ================ HEADER ================ */
 .header:before {
   z-index: 2;
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 100%;
@@ -61,7 +61,7 @@ figure {
 .header {
   position: relative;
   z-index: 3;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg');
   background-repeat: no-repeat;
   height: 448px;
   background-size: cover;
@@ -143,9 +143,6 @@ figure {
 
 .main {
   width: 778px;
-
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .main-card {
@@ -295,7 +292,7 @@ figure {
 .aside-title::after {
   margin: 4px auto 27px;
   /* ПП */
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   width: 66px;
@@ -430,7 +427,7 @@ figure {
 .mailing-list-title::after {
   margin: 11px auto 0;
   /* ПП */
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   width: 66px;
@@ -484,7 +481,7 @@ figure {
 .tags-title::after {
   margin: 11px auto 0;
   /* ПП */
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   width: 66px;
@@ -533,7 +530,7 @@ figure {
 .themes-title::after {
   margin: 11px auto 0;
   /* ПП */
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   width: 66px;
@@ -584,6 +581,7 @@ figure {
 .footer-wrapper {
   width: 1170px;
   margin: auto;
+  /* padding: 0 15px; */
 }
 
 .address {
@@ -618,7 +616,7 @@ figure {
 }
 
 .footer-tumblr {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg');
 }
 
 /* ================ COPYRIGHT ================ */
